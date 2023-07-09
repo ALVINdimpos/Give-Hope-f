@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: F8F8F8;
+}
+
+@layer components {
+  .medical-profile{
+    @apply w-[100%] pt-20 mt-5 mb-auto
+  }
+  .medical-profile-header{
+    @apply text-center mb-8 w-[100%]
+  }
+
+  .medical-profile-info{
+    @apply text-[20px]
+  }
+
+  .category-info{
+    @apply text-[18px] 
+  }
+  
+  .category-info-main{
+    @apply  flex flex-wrap justify-center
+  }
+
+  .category-grid {
+    @apply shadow-[0_5px_20px_rgba(0,0,0,0.3)]
+  }
+
+  .category-image {
+    @apply flex justify-center
+  }
+
+  .request-info {
+    @apply shadow-[0_5px_20px_rgba(0,0,0,0.3)]
+  }
+}
